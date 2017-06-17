@@ -1,0 +1,51 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h2><a id=homenavbar role="button" data-toggle="modal" data-target="#logout">StudentsHouse</a></h2>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+             <a class="btn btn-primary navbar-btn" role="button" data-toggle="modal" data-target="#logout">Logout</a>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <a type="submit" role="button" data-toggle="modal" data-target="#search" class="btn btn-default">Search</a>
+        </form>
+    </div>
+  </div>
+</nav>
+
+
+<!--modal-->
+<div class="modal" id="logout">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Would you like to logout?</h4>
+      </div>
+      <div class="modal-footer">
+        <a role="button" class="btn btn-success" routerLink="/login">Yes</a>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="search">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Search Results</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+      </div>
+    </div>
+  </div>
+</div>
