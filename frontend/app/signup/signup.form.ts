@@ -4,11 +4,10 @@ export class SignupForm {
         public lastname: string,
         public usertype: string,
         public email: string,
-        public password: string,
         public education: string,
         public major: string,
         public gender: string,
-        public about: string
-
+        public about: string,
+        public password : string
     ){ }
 }
