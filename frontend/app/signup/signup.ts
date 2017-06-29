@@ -8,6 +8,7 @@ import { UsersService } from '../services/users.service';
   selector: 'signup-cmp',
   templateUrl: 'signup.html'
 })
+
 export class SignupComponent { 
  
   user = new SignupForm('','','','','','','','','');
